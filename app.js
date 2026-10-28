@@ -79,6 +79,12 @@
     });
   });
 
+  // Кнопки «Посчитать» в карточках решений открывают нужную вкладку калькулятора
+  document.querySelectorAll("[data-open-calc]").forEach((b) => b.addEventListener("click", () => {
+    selectTab(document.getElementById("tab-" + b.dataset.openCalc));
+    document.getElementById("kalkulyator").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  }));
+
   // ---------- Калькулятор сайта ----------
   const site = document.getElementById("calc-site");
   const pagesInput = site.querySelector("[name=pages]");
@@ -92,16 +98,16 @@
     if (!multi) { pagesInput.value = "0"; pagesOut.textContent = "0"; }
     const pages = Number(pagesInput.value);
     const picked = [type, ...site.querySelectorAll("[name=design]:checked, [name=catalog]:checked, [name=motion]:checked, [name=extra]:checked")];
-    const once = picked.reduce((sum, el) => sum + Number(el.value), 0) + pages * 1500;
+    const once = picked.reduce((sum, el) => sum + Number(el.value), 0) + pages * 2000;
     const monthly = site.querySelector("[name=monthly]:checked");
     const items = picked.map((el) => el.dataset.name).filter(Boolean);
     if (pages) items.push("Дополнительных страниц: " + pages);
-    if (monthly) items.push("Сопровождение 1 500 ₽ в месяц");
+    if (monthly) items.push("Сопровождение 2 000 ₽ в месяц");
     return { once, monthly: monthly ? Number(monthly.value) : 0, items };
   };
   const renderSite = () => {
     const s = siteState();
-    site.querySelector("[data-sum]").textContent = rub(s.once) + " – " + rub(round500(s.once * 1.25));
+    site.querySelector("[data-sum]").textContent = rub(s.once) + " – " + rub(round500(s.once * 1.3));
     const m = site.querySelector("[data-monthly]");
     m.hidden = !s.monthly;
     m.textContent = s.monthly ? "плюс " + rub(s.monthly) + " в месяц" : "";
