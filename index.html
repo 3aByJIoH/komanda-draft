@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Контент и продажи под ключ — черновик</title>
+<meta name="description" content="Авторский контент для соцсетей, сайт, бот и путь клиента до заявки. Посчитай стоимость за минуту, первая консультация бесплатно.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Контент и продажи под ключ">
+<meta property="og:description" content="Ты занимаешься своим делом. Соцсети и продажи берём на себя.">
+<meta property="og:image" content="media/sladkaya-osen.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#131209">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержимому</a>
+
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Основное меню">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>Команда</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#pod-klyuch">Под ключ</a></li>
+      <li><a href="#saity">Сайты</a></li>
+      <li><a href="#uslugi">Услуги</a></li>
+      <li><a href="#raboty">Работы</a></li>
+      <li><a href="#voprosy">Вопросы</a></li>
+    </ul>
+    <a class="btn btn-sm btn-primary nav-cta" href="#kalkulyator">Посчитать</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+      <span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <ul>
+      <li><a href="#pod-klyuch">Под ключ</a></li>
+      <li><a href="#saity">Сайты</a></li>
+      <li><a href="#kalkulyator">Калькулятор</a></li>
+      <li><a href="#uslugi">Услуги</a></li>
+      <li><a href="#raboty">Работы</a></li>
+      <li><a href="#tovary">Готовые товары</a></li>
+      <li><a href="#voprosy">Вопросы</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. Первый экран -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><i class="ph ph-sparkle" aria-hidden="true"></i> Контент, сайт и продажи в одних руках</p>
+        <h1 class="hero-title">Ты занимаешься своим делом.<br>Соцсети и продажи<br>берём на себя</h1>
+        <p class="hero-sub">Снимаем авторские ролики, которые не выглядят как нейросеть, и строим путь клиента от ролика до заявки: сайт, бот, напоминания. Стоимость видно сразу, без переписки.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kalkulyator">Посчитать стоимость <i class="ph ph-arrow-down" aria-hidden="true"></i></a>
+        </div>
+        <p class="proof"><i class="ph ph-eye" aria-hidden="true"></i> Наши ролики собирают миллионы просмотров, а один клиентский блог вырос на 11&nbsp;тысяч подписчиков за 2&nbsp;недели</p>
+      </div>
+      <div class="hero-visual" aria-label="Примеры роликов">
+        <button class="reel reel-a" data-video="media/sladkaya-osen.mp4" aria-label="Смотреть ролик «Сладкая осень»"><img src="media/sladkaya-osen.jpg" alt="Иллюстрированный ролик: девушка пробует осеннее печенье среди полок с банками" width="432" height="768"><span class="play"><i class="ph ph-play" aria-hidden="true"></i></span></button>
+        <button class="reel reel-b" data-video="media/kot.mp4" aria-label="Смотреть ролик с котом"><img src="media/kot.jpg" alt="Мультик: чёрный кот с кружкой и надписью «Уйди ты с этой работы»" width="432" height="768"><span class="play"><i class="ph ph-play" aria-hidden="true"></i></span></button>
+        <button class="reel reel-c" data-video="media/dozhd.mp4" aria-label="Смотреть ролик «Мрачный лес»"><img src="media/dozhd.jpg" alt="Иллюстрация: женщина читает у окна, за окном осенний дождь" width="432" height="768"><span class="play"><i class="ph ph-play" aria-hidden="true"></i></span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Проблема и решение -->
+  <section class="section reveal" id="problema">
+    <div class="container">
+      <h2 class="section-title">Знакомо?</h2>
+      <div class="pain-grid">
+        <article class="card pain">
+          <i class="ph ph-hourglass-medium icon" aria-hidden="true"></i>
+          <h3>Соцсети съедают больше времени, чем само дело</h3>
+          <p>Ты делаешь украшения, ведёшь сессии или печёшь торты, а вечером снова думаешь, что выложить.</p>
+        </article>
+        <article class="card pain">
+          <i class="ph ph-robot icon" aria-hidden="true"></i>
+          <h3>Нейросети пугают или выдают одинаковое</h3>
+          <p>Понятно, что без ИИ уже никуда, но разбираться некогда, а шаблонный ИИ контент отталкивает людей.</p>
+        </article>
+        <article class="card pain">
+          <i class="ph ph-chat-circle-dots icon" aria-hidden="true"></i>
+          <h3>Подписчики есть, заявок мало</h3>
+          <p>Люди смотрят, лайкают и уходят: им некуда нажать, чтобы купить или записаться.</p>
+        </article>
+      </div>
+      <div class="card solution">
+        <h3>Мы забираем это целиком</h3>
+        <p>Идеи и сценарии придумывает человек, нейросеть только помогает с визуалом. А сайт, бот и напоминания доводят зрителя до заявки без твоего участия.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Под ключ -->
+  <section class="section reveal" id="pod-klyuch">
+    <div class="container">
+      <p class="eyebrow">Главная услуга</p>
+      <h2 class="section-title">Контент и продажи под ключ</h2>
+      <p class="section-lead">Одна команда отвечает за всё: от идеи ролика до сообщения «хочу записаться» у тебя в телефоне.</p>
+      <div class="split">
+        <article class="card side">
+          <h3><i class="ph ph-film-strip" aria-hidden="true"></i> Контент</h3>
+          <ul class="ticks">
+            <li>Авторские идеи и сценарии под твою нишу</li>
+            <li>Ролики и мультики с узнаваемым визуалом</li>
+            <li>Оформление профиля и сторис</li>
+            <li>Ведение одной или нескольких соцсетей</li>
+          </ul>
+        </article>
+        <article class="card side">
+          <h3><i class="ph ph-funnel" aria-hidden="true"></i> Продажи</h3>
+          <ul class="ticks">
+            <li>Сайт или страница, куда ведут ролики</li>
+            <li>Бот в Telegram: ответы, запись, заявки</li>
+            <li>Путь клиента от ролика до заявки</li>
+            <li>База клиентов с напоминаниями вернуться</li>
+          </ul>
+        </article>
+      </div>
+      <h3 class="steps-title">Как это работает</h3>
+      <ol class="steps">
+        <li class="step"><span class="step-num">1</span><div><h4>Считаешь стоимость</h4><p>Отмечаешь в калькуляторе, что нужно, и сразу видишь вилку цены.</p></div></li>
+        <li class="step"><span class="step-num">2</span><div><h4>Бесплатная консультация</h4><p>Разбираем твою нишу и аудиторию, называем точную цену и сроки.</p></div></li>
+        <li class="step"><span class="step-num">3</span><div><h4>Запускаем</h4><p>Контент выходит регулярно, сайт и бот принимают заявки, ты занимаешься делом.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4. Тэглайн (раскрытие по словам) -->
+  <section class="tagline" aria-label="Наш принцип">
+    <div class="container">
+      <p class="tagline-text" data-words>Идеи придумывает человек. Нейросеть только рисует. Поэтому твой контент не похож на чужой.</p>
+    </div>
+  </section>
+
+  <!-- 5. Сайты -->
+  <section class="section reveal" id="saity">
+    <div class="container">
+      <p class="eyebrow">Отдельно или в пакете</p>
+      <h2 class="section-title">Сайт, который продаёт</h2>
+      <p class="section-lead">Два уровня. Оба собираются под твои услуги, принимают заявки и хорошо открываются с телефона.</p>
+      <div class="split">
+        <article class="card tier">
+          <span class="badge">Простой</span>
+          <h3>Аккуратная витрина</h3>
+          <p>Готовая проверенная структура, твои фото и тексты, кнопка заявки в мессенджер. Запуск за 1–2 недели.</p>
+          <p class="price">от 6&nbsp;000 ₽</p>
+          <p class="example"><i class="ph ph-storefront" aria-hidden="true"></i> Пример: витрина домашней пряничной мастерской</p>
+        </article>
+        <article class="card tier tier-accent">
+          <span class="badge badge-accent">Дизайнерский</span>
+          <h3>Фирменный стиль</h3>
+          <p>Свои цвета и шрифты, анимации, калькулятор или опросник, видео прямо на страницах, админка для правок.</p>
+          <p class="price">от 16&nbsp;000 ₽</p>
+          <p class="example"><i class="ph ph-sparkle" aria-hidden="true"></i> Пример: сайт психолога с тестами и записью</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Калькулятор -->
+  <section class="section reveal" id="kalkulyator">
+    <div class="container">
+      <p class="eyebrow">Без переписки</p>
+      <h2 class="section-title">Посчитай стоимость</h2>
+      <p class="section-lead">Отметь, что нужно. Это примерная вилка, точную цену называем на бесплатной консультации.</p>
+
+      <div class="tabs" role="tablist" aria-label="Что считаем">
+        <button class="tab" role="tab" id="tab-site" aria-selected="true" aria-controls="calc-site">Сайт</button>
+        <button class="tab" role="tab" id="tab-content" aria-selected="false" aria-controls="calc-content" tabindex="-1">Контент и продажи</button>
+      </div>
+
+      <!-- Калькулятор сайта -->
+      <form class="calc" id="calc-site" role="tabpanel" aria-labelledby="tab-site" data-calc="site">
+        <div class="calc-body">
+          <fieldset>
+            <legend>Какой сайт</legend>
+            <div class="options">
+              <label class="opt"><input type="radio" name="type" value="6000" data-name="Визитка" checked><span><b>Визитка</b><small>Один экран: кто ты, что делаешь, как связаться</small></span></label>
+              <label class="opt"><input type="radio" name="type" value="10000" data-name="Лендинг"><span><b>Лендинг</b><small>Одна длинная страница с услугами и заявкой</small></span></label>
+              <label class="opt"><input type="radio" name="type" value="18000" data-name="Многостраничный"><span><b>Многостраничный</b><small>Отдельные страницы услуг, портфолио, блог</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Дизайн</legend>
+            <div class="options">
+              <label class="opt"><input type="radio" name="design" value="0" data-name="Аккуратный шаблон" checked><span><b>Аккуратный шаблон</b><small>Проверенная структура, твои цвета</small></span></label>
+              <label class="opt"><input type="radio" name="design" value="6000" data-name="Фирменный дизайн"><span><b>Фирменный</b><small>Под твой бренд, свой стиль</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="pages-field">
+            <legend>Страниц сверх включённых</legend>
+            <div class="stepper">
+              <button type="button" class="step-btn" data-step="-1" aria-label="Меньше страниц"><i class="ph ph-minus" aria-hidden="true"></i></button>
+              <output id="pages-out" aria-live="polite">0</output>
+              <button type="button" class="step-btn" data-step="1" aria-label="Больше страниц"><i class="ph ph-plus" aria-hidden="true"></i></button>
+              <span class="hint">по 1&nbsp;500 ₽ за страницу</span>
+            </div>
+            <input type="hidden" name="pages" value="0">
+          </fieldset>
+          <fieldset>
+            <legend>Каталог товаров или услуг</legend>
+            <div class="options">
+              <label class="opt"><input type="radio" name="catalog" value="0" data-name="" checked><span><b>Не нужен</b></span></label>
+              <label class="opt"><input type="radio" name="catalog" value="3000" data-name="Каталог до 20 позиций"><span><b>До 20 позиций</b></span></label>
+              <label class="opt"><input type="radio" name="catalog" value="6000" data-name="Большой каталог"><span><b>Больше 20</b></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Анимация и интерактив</legend>
+            <div class="options">
+              <label class="opt"><input type="radio" name="motion" value="0" data-name="" checked><span><b>Без анимации</b></span></label>
+              <label class="opt"><input type="radio" name="motion" value="2000" data-name="Лёгкая анимация"><span><b>Лёгкая</b></span></label>
+              <label class="opt"><input type="radio" name="motion" value="5000" data-name="Насыщенная анимация"><span><b>Насыщенная</b></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Дополнительно</legend>
+            <div class="options checks">
+              <label class="opt"><input type="checkbox" name="extra" value="3000" data-name="Оплата на сайте"><span><b>Оплата на сайте</b><small>+3&nbsp;000 ₽</small></span></label>
+              <label class="opt"><input type="checkbox" name="extra" value="1000" data-name="Заявки в Telegram или WhatsApp"><span><b>Заявки в Telegram или WhatsApp</b><small>+1&nbsp;000 ₽</small></span></label>
+              <label class="opt"><input type="checkbox" name="extra" value="4000" data-name="Свой калькулятор или опросник"><span><b>Свой калькулятор или опросник</b><small>+4&nbsp;000 ₽</small></span></label>
+              <label class="opt"><input type="checkbox" name="extra" value="2000" data-name="Видео портфолио на сайте"><span><b>Видео портфолио на сайте</b><small>+2&nbsp;000 ₽</small></span></label>
+              <label class="opt"><input type="checkbox" name="extra" value="6000" data-name="Админка для правок"><span><b>Админка: правишь фото, цены и тексты сама</b><small>+6&nbsp;000 ₽</small></span></label>
+              <label class="opt"><input type="checkbox" name="monthly" value="1500" data-name="Сопровождение"><span><b>Сопровождение после запуска</b><small>1&nbsp;500 ₽ в месяц</small></span></label>
+            </div>
+          </fieldset>
+        </div>
+        <aside class="calc-result" aria-live="polite">
+          <p class="result-label">Примерно</p>
+          <p class="result-sum" data-sum>6&nbsp;000 – 7&nbsp;500 ₽</p>
+          <p class="result-monthly" data-monthly hidden></p>
+          <p class="result-note">Хостинг и домен около 300 ₽ в месяц, оформляются на тебя.</p>
+          <button type="button" class="btn btn-primary btn-block" data-send>Обсудить на бесплатной консультации</button>
+          <p class="send-status" data-status role="status"></p>
+        </aside>
+      </form>
+
+      <!-- Калькулятор контента: каркас -->
+      <form class="calc" id="calc-content" role="tabpanel" aria-labelledby="tab-content" data-calc="content" hidden>
+        <div class="calc-body">
+          <fieldset>
+            <legend>Где вести</legend>
+            <div class="options checks">
+              <label class="opt"><input type="checkbox" name="social" data-name="Instagram" checked><span><b>Instagram</b></span></label>
+              <label class="opt"><input type="checkbox" name="social" data-name="Telegram"><span><b>Telegram</b></span></label>
+              <label class="opt"><input type="checkbox" name="social" data-name="VK"><span><b>VK</b></span></label>
+              <label class="opt"><input type="checkbox" name="social" data-name="YouTube Shorts"><span><b>YouTube Shorts</b></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Роликов в месяц</legend>
+            <div class="options">
+              <label class="opt"><input type="radio" name="reels" data-name="4 ролика в месяц" checked><span><b>4</b><small>раз в неделю</small></span></label>
+              <label class="opt"><input type="radio" name="reels" data-name="8 роликов в месяц"><span><b>8</b><small>два в неделю</small></span></label>
+              <label class="opt"><input type="radio" name="reels" data-name="12 роликов в месяц"><span><b>12</b><small>три в неделю</small></span></label>
+              <label class="opt"><input type="radio" name="reels" data-name="16 роликов в месяц"><span><b>16</b><small>почти каждый день</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Контент дополнительно</legend>
+            <div class="options checks">
+              <label class="opt"><input type="checkbox" name="cextra" data-name="Сторис"><span><b>Сторис</b></span></label>
+              <label class="opt"><input type="checkbox" name="cextra" data-name="Оформление профиля"><span><b>Оформление профиля</b></span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Продажи</legend>
+            <div class="options checks">
+              <label class="opt"><input type="checkbox" name="sales" value="10000" data-name="Сайт или страница"><span><b>Сайт или страница</b><small>от 10&nbsp;000 ₽</small></span></label>
+              <label class="opt"><input type="checkbox" name="sales" value="6000" data-name="Бот в Telegram"><span><b>Бот в Telegram</b><small>от 6&nbsp;000 ₽</small></span></label>
+              <label class="opt"><input type="checkbox" name="sales" value="8000" data-name="Путь клиента до заявки"><span><b>Путь клиента до заявки</b><small>от 8&nbsp;000 ₽</small></span></label>
+              <label class="opt"><input type="checkbox" name="sales" value="4000" data-name="База клиентов с напоминаниями"><span><b>База клиентов с напоминаниями</b><small>от 4&nbsp;000 ₽</small></span></label>
+            </div>
+          </fieldset>
+        </div>
+        <aside class="calc-result" aria-live="polite">
+          <p class="result-label">Продажи, разово</p>
+          <p class="result-sum" data-sum>0 ₽</p>
+          <p class="result-label">Контент, в месяц</p>
+          <p class="result-pending">Цены уточняются. Назовём на консультации</p>
+          <button type="button" class="btn btn-primary btn-block" data-send>Обсудить на бесплатной консультации</button>
+          <p class="send-status" data-status role="status"></p>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <!-- 7. Услуги -->
+  <section class="section reveal" id="uslugi">
+    <div class="container">
+      <p class="eyebrow">Можно взять отдельно</p>
+      <h2 class="section-title">Услуги команды</h2>
+      <div class="service-grid">
+        <article class="card service"><i class="ph ph-film-slate icon" aria-hidden="true"></i><h3>Ролики и мультики</h3><p>Авторская идея, сценарий, иллюстрации и анимация, озвучка, монтаж.</p><p class="price">от 2&nbsp;500 ₽ за ролик</p></article>
+        <article class="card service"><i class="ph ph-user-focus icon" aria-hidden="true"></i><h3>Оформление профиля</h3><p>Шапка, аватар, обложки и рубрики, чтобы новый человек сразу понял, кто ты.</p><p class="price">от 4&nbsp;000 ₽</p></article>
+        <article class="card service"><i class="ph ph-paper-plane-tilt icon" aria-hidden="true"></i><h3>Бот в Telegram</h3><p>Отвечает на частые вопросы, записывает, собирает заявки круглые сутки.</p><p class="price">от 6&nbsp;000 ₽</p></article>
+        <article class="card service"><i class="ph ph-address-book icon" aria-hidden="true"></i><h3>База клиентов</h3><p>Таблица и приложение на телефоне: кому и когда написать, чтобы клиент вернулся.</p><p class="price">от 4&nbsp;000 ₽</p></article>
+        <article class="card service"><i class="ph ph-brain icon" aria-hidden="true"></i><h3>ИИ под задачи бизнеса</h3><p>Настроим нейросети так, чтобы рутина делалась сама: тексты, таблицы, ответы.</p><p class="price">от 3&nbsp;000 ₽ за созвон</p></article>
+        <article class="card service"><i class="ph ph-video-camera icon" aria-hidden="true"></i><h3>Пролёты камеры для нейровидео</h3><p>3D черновик движения камеры, по которому Seedance с первого раза снимает сложный кадр.</p><p class="price">от 1&nbsp;500 ₽ за сцену</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Работы -->
+  <section class="section reveal" id="raboty">
+    <div class="container">
+      <p class="eyebrow">Нажми, чтобы посмотреть</p>
+      <h2 class="section-title">Работы</h2>
+      <div class="reel-grid">
+        <button class="reel" data-video="media/osen.mp4" aria-label="Смотреть ролик «Осень»"><img src="media/osen.jpg" alt="Девушка в осенней шляпе с кружкой в лесу" loading="lazy" width="432" height="768"><span class="play"><i class="ph ph-play" aria-hidden="true"></i></span></button>
+        <button class="reel" data-video="media/mifologiya.mp4" aria-label="Смотреть ролик «Странная мифология»"><img src="media/mifologiya.jpg" alt="Обложка «Странная мифология» в оранжево чёрной графике" loading="lazy" width="432" height="768"><span class="play"><i class="ph ph-play" aria-hidden="true"></i></span></button>
+        <button class="reel" data-video="media/doroga.mp4" aria-label="Смотреть ролик «Дорога»"><img src="media/doroga.jpg" alt="Иллюстрация: дорога через осенний лес" loading="lazy" width="432" height="768"><span class="play"><i class="ph ph-play" aria-hidden="true"></i></span></button>
+        <button class="reel" data-video="media/trevozhnye-mysli.mp4" aria-label="Смотреть ролик «Тревожным мыслям»"><img src="media/trevozhnye-mysli.jpg" alt="Кухня с яблоками и чёрным котом" loading="lazy" width="432" height="768"><span class="play"><i class="ph ph-play" aria-hidden="true"></i></span></button>
+      </div>
+      <div class="work-wide card">
+        <button class="reel reel-wide" data-video="media/prolet-demo.mp4" aria-label="Смотреть 3D черновик пролёта камеры"><img src="media/prolet-demo.jpg" alt="3D черновик: синий великан за спиной жёлтой фигурки в поле" loading="lazy" width="960" height="540"><span class="play"><i class="ph ph-play" aria-hidden="true"></i></span></button>
+        <div>
+          <h3>Сложный кадр для нейросети</h3>
+          <p>Черновик пролёта камеры: девочка идёт к дому, за ней вырастает туманный монстр. По такому черновику нейросеть понимает движение камеры с первой генерации, а значит, не тратятся лишние кредиты.</p>
+        </div>
+      </div>
+      <p class="more-link"><a href="#" class="link-disabled" aria-disabled="true">Вся папка работ на Яндекс Диске <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a><span class="todo">ссылка появится позже</span></p>
+    </div>
+  </section>
+
+  <!-- 9. Готовые товары -->
+  <section class="section reveal" id="tovary">
+    <div class="container">
+      <p class="eyebrow">Покупаешь и сразу получаешь</p>
+      <h2 class="section-title">Готовые товары</h2>
+      <div class="service-grid">
+        <article class="card product"><span class="badge">Скоро</span><h3>Набор пролётов для Seedance</h3><p>15 черновиков движения камеры, готовые промпты и инструкция. Сложные кадры получаются с первой попытки.</p><p class="price">1&nbsp;290 ₽</p></article>
+        <article class="card product"><span class="badge">Скоро</span><h3>Шаблон «База клиентов»</h3><p>Таблица с напоминаниями и пошаговая инструкция, чтобы постоянные клиенты возвращались.</p><p class="price">990 ₽</p></article>
+        <article class="card product"><span class="badge">Скоро</span><h3>Закрытый канал по ИИ</h3><p>Раз в неделю новый урок: как нейросети экономят время в твоём деле. Вопросы можно задать лично.</p><p class="price">1&nbsp;290 ₽ в месяц</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Отзывы: заглушка -->
+  <section class="section reveal" id="otzyvy">
+    <div class="container">
+      <h2 class="section-title">Отзывы</h2>
+      <div class="card placeholder">
+        <i class="ph ph-chat-centered-text icon" aria-hidden="true"></i>
+        <p>Здесь будут настоящие отзывы клиентов. Собираем их после первых проектов.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Вопросы -->
+  <section class="section reveal" id="voprosy">
+    <div class="container narrow">
+      <h2 class="section-title">Частые вопросы</h2>
+      <div class="faq">
+        <details><summary>Почему цена в калькуляторе вилкой?</summary><p>Точная цена зависит от твоей ниши, объёма текстов и фото. Калькулятор показывает честный диапазон, а на консультации называем точную сумму до начала работы.</p></details>
+        <details><summary>Консультация правда бесплатная?</summary><p>Да. Разбираем твою задачу, называем цену и сроки. Решение принимаешь после, ни к чему не обязывает.</p></details>
+        <details><summary>Контент будет выглядеть как нейросеть?</summary><p>Нет. Идеи и сценарии придумывает человек под твою нишу, нейросеть помогает только с картинкой. Поэтому ролики узнаваемые и живые.</p></details>
+        <details><summary>Мне самой нужно разбираться в нейросетях?</summary><p>Нет. Всё делаем мы. Если захочешь разобраться, есть закрытый канал с уроками.</p></details>
+        <details><summary>Сколько времени занимает запуск?</summary><p>Простой сайт запускаем за 1–2 недели, бота примерно за неделю. Контент выходит по графику, который согласуем на консультации.</p></details>
+        <details><summary>Можно взять только сайт или только ролики?</summary><p>Да, любую услугу можно взять отдельно. Пакет под ключ просто удобнее: одна команда отвечает за всё.</p></details>
+        <details><summary>Кому принадлежит сайт?</summary><p>Тебе. Хостинг и домен оформляются на тебя, мы передаём все доступы.</p></details>
+        <details><summary>Можно оплатить частями?</summary><p>Да, обычно половина до начала и половина после запуска. Обсудим на консультации.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. Финальный призыв -->
+  <section class="section final reveal">
+    <div class="container final-inner">
+      <h2 class="section-title">Посмотри, во сколько обойдётся твой контент и сайт</h2>
+      <p class="section-lead">Минута в калькуляторе, потом бесплатная консультация. Без обязательств.</p>
+      <a class="btn btn-primary" href="#kalkulyator">Посчитать стоимость <i class="ph ph-arrow-up" aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>Команда · черновик сайта, 2026</p>
+    <nav aria-label="Документы и контакты">
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="offer.html">Оферта</a>
+      <a href="https://t.me/XKAKAOMAMA" rel="noopener" target="_blank">Telegram</a>
+    </nav>
+  </div>
+</footer>
+
+<dialog class="player" id="player" aria-label="Просмотр ролика">
+  <button class="player-close" type="button" aria-label="Закрыть"><i class="ph ph-x" aria-hidden="true"></i></button>
+  <video controls playsinline preload="none"></video>
+</dialog>
+
+<script src="app.js" defer></script>
+</body>
+</html>
